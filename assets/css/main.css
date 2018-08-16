@@ -1,0 +1,20 @@
+body{
+    min-height: 300vh;
+  }
+  .logo{
+        font-weight: 900;
+        }
+  .thin-text {
+    font-weight:300;
+    background: rgba(96,125,139,.4);
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  .portfolio{
+    margin-top: 60px;
+  }
+  
+  .card-image{
+    height:120px;
+  } 
