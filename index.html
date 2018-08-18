@@ -13,9 +13,7 @@
 
   </head>
   <style>
-    body{
-      min-height: 300vh;
-    }
+    
     .logo{
           font-weight: 900;
           }
@@ -27,44 +25,47 @@
     }
     
     .card{
-    height: 300px; /* Your height here */
+    height: 360px; 
     overflow: hidden;
     }
     .card-image{
-      height:100px;
+      height:180px;
       overflow: hidden;
     }
     h5{
       margin-top: 60px;
       font-weight: 800;
-      
     }
-     
+
+
+    
 
 
     
   </style>
 
   <body>
+      <div class="navbar-fixed">
         <nav>
                 <div class="nav-wrapper container">
-                  <a href="mversion.html" class="brand-logo">Lucky Fang</a>
+                  <a href="index.html" class="brand-logo">Lucky Fang</a>
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
-                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="about.html">About Me</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
                     <li><a href="mobile.html">Mobile</a></li>
                   </ul>
                 </div>
               </nav>
             
               <ul class="sidenav" id="mobile-demo">
-                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="about.html">About Me</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="contacts.html">Contact</a></li>
                 <li><a href="mobile.html">Mobile</a></li>
               </ul>
+        </div>
          <!-- parallax -->   
         <div class="parallax-container valign-wrapper">
           <div class="container">
@@ -82,14 +83,14 @@
 
                 <div class="parallax"><img src="assets/images/background.jpg"></div>
         </div>    
-        <div class="parallax-container valign-wrapper">
+        <div class="parallax-container valign-wrapper port">
             <div class="row container">
               <div class="row portfolio">
                 <div class="col l4">
                     <a class="waves-effect btn-large hoverable red accent-2">Portfolio</a>
                   </div>
               </div>
-                <div class="col l4 s12 m7">
+                <div class="col l4 s12 m6">
                   <div class="card">
                     <div class="card-image">
                       <img src="assets/images/trainnew.png" class="materialboxed">
@@ -100,37 +101,37 @@
                     </div>
                     <div class="card-action">
                       <a href="https://lukiafang.github.io/Train-Scheduler/">https://lukiafang.github.io/Train-Scheduler</a>
-                      <a href="https://github.com/lukiafang/Train-Scheduler">Github Repo</a>
+                      <a href="https://github.com/lukiafang/Train-Scheduler" class="pink-text text-lighten-1">Github Repo</a>
                     </div>
                   </div>
                 </div>
-                <div class="col l4 s12 m7">
+                <div class="col l4 hide-on-med-and-down">
                   <div class="card">
                     <div class="card-image">
                       <img src="assets/images/trivia.png" class="materialboxed">
                       <span class="card-title black-text">Trivia Game</span>
                     </div>
                     <div class="card-content">
-                      <p>A simple trivia game with some javascript and countdown timer.</p>
+                      <p>A trivia game with some javascript and a countdown timer. Result will display number of right wrong and unanswered</p>
                     </div>
                     <div class="card-action">
                       <a href="https://lukiafang.github.io/TriviaGame/">https://lukiafang.github.io/TriviaGame/</a>
-                      <a href="https://github.com/lukiafang/Train-Scheduler">Github Repo</a>
+                      <a href="https://github.com/lukiafang/Train-Scheduler" class="pink-text text-lighten-1">Github Repo</a>
                     </div>
                   </div>
                 </div>
-                <div class="col l4 s12 m7">
+                <div class="col l4  hide-on-med-and-down">
                   <div class="card">
                     <div class="card-image">
                       <img src="assets/images/giftac.png" class="materialboxed">
                       <span class="card-title black-text">Gify</span>
                     </div>
                     <div class="card-content">
-                      <p>A page pulls 10 animal gifs from gify.com. User can create more buttons.</p>
+                      <p>A page pulls 10 animal gifs from gify.com. User can create more buttons session stored. All previous gifs stays on the page.</p>
                     </div>
                     <div class="card-action">
                       <a href="https://lukiafang.github.io/GifTastic/">https://lukiafang.github.io/GifTastic/</a>
-                      <a href="https://github.com/lukiafang/Train-Scheduler">Github Repo</a>
+                      <a href="https://github.com/lukiafang/Train-Scheduler" class="pink-text text-lighten-1">Github Repo</a>
                     </div>
                   </div>
                 </div>
@@ -170,15 +171,18 @@
 
     // Or with jQuery
 
-    $(document).ready(function(){
-      $('.parallax').parallax();
-    });
+
+    
+      
+     
+        $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+    $('.materialboxed').materialbox();
+  });
+      
     </script>
-    <script>
-    $(document).ready(function(){
-      $('.materialboxed').materialbox();
-    });
-    </script>
+  
 
   </body>
 </html>
